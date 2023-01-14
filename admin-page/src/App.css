@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
 :root {
-  --primary-color: #181b3a;
-  --secondary-color: #01d293;
-  --body-bg: #0b0c28;
-  --card-01-bg: linear-gradient(#ef621c, #e1424e);
-  --card-02-bg: linear-gradient(#01d293, #56c57a);
+  --primary-color: #060b10;
+  --secondary-color: #6a767f;
+  --body-bg: #23272a;
+  --card-01-bg: linear-gradient(#b0c5d3, #464f54);
+  --card-02-bg: linear-gradient(#b0c5d3, #464f54);
   --card-03-bg: #725cff;
   --card-04-bg: #2884ff;
   --heading-color: #fff;
@@ -42,3 +42,32 @@ a {
 img {
   width: 100%;
 }
+
+/*
+ --primary-color: #181b3a;
+  --secondary-color: #01d293;
+  --body-bg: #0b0c28;
+  --card-01-bg: linear-gradient(#ef621c, #e1424e);
+  --card-02-bg: linear-gradient(#01d293, #56c57a);
+  --card-03-bg: #725cff;
+  --card-04-bg: #2884ff;
+  --heading-color: #fff;
+  --small-text-color: #808191;
+  --recommend-car01-bg: #e1dfa4;
+  --recommend-car02-bg: #e3ecf1;
+  --recommend-car03-bg: #f4e3e5;
+*/
+/* tent {
+  --primary-color: #464f54;
+  --secondary-color: #01d293;
+  --body-bg: #0b0c28;
+  --card-01-bg: linear-gradient(#ef621c, #e1424e);
+  --card-02-bg: linear-gradient(#01d293, #56c57a);
+  --card-03-bg: #725cff;
+  --card-04-bg: #2884ff;
+  --heading-color: #fff;
+  --small-text-color: #808191;
+  --recommend-car01-bg: #e1dfa4;
+  --recommend-car02-bg: #e3ecf1;
+  --recommend-car03-bg: #f4e3e5;
+} */
