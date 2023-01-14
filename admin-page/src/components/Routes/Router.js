@@ -1,17 +1,19 @@
-import { BrowserHistory, Routes, Route } from '@remix-run/router'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import Dashboard from '../../pages/Dashboard'
 import Login from '../../pages/Login'
+import Admin from '../../pages/Admin'
 
 const Router = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
+    
+    <Routes>
+    <Route path="/" element={<Navigate to='/dashboard' element={Dashboard}/>} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/login" element={<Admin />} />
+    </Routes>
   )
 }
 
