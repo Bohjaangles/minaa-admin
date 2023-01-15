@@ -1,6 +1,15 @@
 import React from "react";
 import { useFetch } from "react-async";
-import { ResponsiveContainer, BarChart, Bar, XAxis, Tooltip, YAxis } from "recharts";
+import { 
+  ResponsiveContainer,
+  BarChart,
+  Bar, 
+  XAxis, 
+  Tooltip, 
+  YAxis, 
+  CartesianGrid,
+  Legend,
+} from "recharts";
 import reportsData from "../../mockData/reports.js";
 
 export default function ReportChart() {
@@ -36,15 +45,21 @@ export default function ReportChart() {
   ]
   
   return (
-    <ResponsiveContainer width="100%">
-      <BarChart data={reportsData}>
+    <ResponsiveContainer width="100%" >
+      <BarChart
+        data={reportsData}
+        margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" stroke="#2884ff" />
         <YAxis stroke="#2884ff"/>
-        <Bar dataKey="Unclear" stroke="#2884ff" fill="#2884ff" barSize={30} />
-        <Bar dataKey="Obscured" stroke="#2884ff" fill="#2884ff" barSize={30} />
-        <Bar dataKey="Multiple" stroke="#2884ff" fill="#2884ff" barSize={30} />
-        <Bar dataKey="Large" stroke="#2884ff" fill="#2884ff" barSize={30} />
-        <Bar dataKey="Small" stroke="#2884ff" fill="#2884ff" barSize={30} />
+        <Legend />
+        <Bar dataKey="value" stroke="#2884ff" fill="#2884ff" barSize={30} />
         <Tooltip wrapperClassName="tooltip__style" cursor={false} />
       </BarChart>
     </ResponsiveContainer>
