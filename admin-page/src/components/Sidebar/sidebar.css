@@ -15,6 +15,10 @@
   line-height: 70px;
 }
 
+element.style {
+  border-radius: 50%
+}
+
 .sidebar__top {
   display: flex;
   flex-direction: row;

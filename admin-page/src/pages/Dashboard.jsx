@@ -2,6 +2,7 @@ import DataCard1 from '../components/dashboard/DataCard1.jsx'
 import DataCard2 from '../components/dashboard/DataCard2.jsx'
 import DataCard3 from '../components/dashboard/DataCard3.jsx'
 import ReportChart from '../components/dashboard/ReportChart.jsx'
+import SecondChart from '../components/dashboard/SecondChart.js'
 
 import React from 'react'
 
@@ -32,7 +33,7 @@ const Dashboard = () => {
 
           <div className="stats">
             <h3 className="stats__title">Data visualization 1</h3>
-            {/* <CarStatsChart /> */}
+            <SecondChart />
           </div>
         </div>
       </div>

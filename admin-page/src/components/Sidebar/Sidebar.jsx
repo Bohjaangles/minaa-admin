@@ -1,5 +1,4 @@
 import React from 'react'
-import PollIcon from '@mui/icons-material/Poll';
 // import { NavLink } from 'react-router-dom';
 import './sidebar.css'
 import { Typography } from '@mui/material';
@@ -24,7 +23,7 @@ export default function Sidebar() {
         <List
           className='sidebar__list-1'
           component="Sidebar"
-          dense='true'
+          dense={true}
           sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
           subheader={<ListSubheader className='list_header-1'><ListItemIcon fontSize='large'>
             <AccountCircleRoundedIcon />
@@ -100,7 +99,7 @@ export default function Sidebar() {
         <List
           className='sidebar__list-2'
           component="Sidebar"
-          dense='true'
+          dense={true}
           sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
           subheader={<ListSubheader className='list_header-1'><ListItemIcon fontSize='large'>
             <AssessmentRoundedIcon />
