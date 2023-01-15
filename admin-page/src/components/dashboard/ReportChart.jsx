@@ -47,7 +47,7 @@ export default function ReportChart() {
   return (
     <ResponsiveContainer width="100%" >
       <BarChart
-        data={reportsData}
+        data={chartData}
         margin={{
             top: 5,
             right: 30,

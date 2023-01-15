@@ -32,10 +32,6 @@
 
 }
 
-.single__card:nth-child(4) {
-  background: var(--card-04-bg);
-}
-
 .card__content h4 {
   color: var(--heading-color);
   font-size: 1rem;
