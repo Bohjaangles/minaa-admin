@@ -1,4 +1,7 @@
-import DataCard from '../components/dashboard/DataCard.jsx'
+import DataCard1 from '../components/dashboard/DataCard1.jsx'
+import DataCard2 from '../components/dashboard/DataCard2.jsx'
+import DataCard3 from '../components/dashboard/DataCard3.jsx'
+import ReportChart from '../components/dashboard/ReportChart.jsx'
 
 import React from 'react'
 
@@ -11,34 +14,26 @@ const card1 = {
 }
 
 
+
 const Dashboard = () => {
   return (
     <div className="dashboard">
       <div className="dashboard__wrapper">
         <div className="dashboard__cards">
-          <DataCard item={card1} />
+          <DataCard1 item={card1} />
+          <DataCard2 item={card1} />
+          <DataCard3 item={card1} />
         </div>
-          {/* <SingleCard item={carObj} />
-          <SingleCard item={tripObj} />
-          <SingleCard item={clientObj} />
-          <SingleCard item={distanceObj} /> */}
-
         <div className="statics">
           <div className="stats">
             <h3 className="stats__title">Data visualization 2</h3>
-            {/* <MileChart /> */}
+            <ReportChart />
           </div>
 
           <div className="stats">
             <h3 className="stats__title">Data visualization 1</h3>
             {/* <CarStatsChart /> */}
           </div>
-        </div>
-
-        <div className="recommend__cars-wrapper">
-          {/* {recommendCarsData.map((item) => (
-            <RecommendCarCard item={item} key={item.id} />
-            ))} */}
         </div>
       </div>
     </div>

@@ -21,10 +21,15 @@
 
 .single__card:nth-child(2) {
   background: var(--card-02-bg);
+  margin-top: 25px;
+  margin-left: 10px;
 }
 
 .single__card:nth-child(3) {
-  background: var(--card-03-bg);
+  background: var(--card-02-bg);
+  margin-top: 25px;
+  margin-left: 10px;
+
 }
 
 .single__card:nth-child(4) {
@@ -51,16 +56,17 @@
 .dashboard__cards {
   margin-left: 245px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
 }
 
 .statics {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  column-gap: 1rem;
   margin-top: 2rem;
   margin-left: 230px;
+  height: 315px;
 }
 
 .stats {
@@ -68,8 +74,9 @@
   padding: 30px;
   border-radius: 5px;
   height: 320px;
-  padding-bottom: 50px;
-  margin-left: 25px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  height: 365px;
 }
 
 .tooltip__style {

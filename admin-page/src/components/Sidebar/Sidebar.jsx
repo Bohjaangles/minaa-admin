@@ -28,7 +28,7 @@ export default function Sidebar() {
           sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
           subheader={<ListSubheader className='list_header-1'><ListItemIcon fontSize='large'>
             <AccountCircleRoundedIcon />
-          </ListItemIcon>User data</ListSubheader>}
+          </ListItemIcon>USER DATA</ListSubheader>}
         >
           <ListItem>
             <ListItemText id="switch-list-label-user-Fname" primary="User first name" />
@@ -104,7 +104,7 @@ export default function Sidebar() {
           sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
           subheader={<ListSubheader className='list_header-1'><ListItemIcon fontSize='large'>
             <AssessmentRoundedIcon />
-          </ListItemIcon>Report data</ListSubheader>}
+          </ListItemIcon>REPORT DATA</ListSubheader>}
         >
           <ListItem>
             <ListItemText id="switch-list-label-r-category" primary="Report category" />

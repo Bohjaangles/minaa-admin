@@ -24,7 +24,6 @@
   color: var(--heading-color);
   margin-bottom: 1em;
 }
-
 .sidebar__top h2 span {
   width: 30px;
   height: 30px;
@@ -51,22 +50,27 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
   border-radius: 15%;
 }
 .list_header-1 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   border-radius: 15%;
 }
 element.style{
   display: flex;
   align-items: center;
+  border-radius: 50%;
 }
+
 .list_header-2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-radius: 15%;
 }
 
 
