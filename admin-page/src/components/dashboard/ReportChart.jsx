@@ -1,5 +1,5 @@
 import React from "react";
-import { useFetch } from "react-async";
+// import { useFetch } from "react-async";
 import { 
   ResponsiveContainer,
   BarChart,
@@ -10,7 +10,6 @@ import {
   CartesianGrid,
   Legend,
 } from "recharts";
-import reportsData from "../../mockData/reports.js";
 
 export default function ReportChart() {
   // const repData = () => {
