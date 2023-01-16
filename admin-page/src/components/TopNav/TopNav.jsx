@@ -2,7 +2,7 @@ import React from 'react'
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 // import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import minaa from '../../assets/minaa.png';
-import { TextField } from '@mui/material';
+import { TextField, Typography } from '@mui/material';
 import { Link } from "react-router-dom";
 import "./top-nav.css";
 import { Avatar } from '@mui/material';
@@ -16,7 +16,7 @@ export default function TopNav() {
         
         </div>
         <div className="logo">
-          <Avatar alt="Minaa" src={minaa} />
+          <Typography variant='h4' >MINAA</Typography><Avatar sx={{ width: 55, height: 55, top: 4 }} alt="Minaa" src={minaa} />
         </div>
         <div className="top__nav-right">
           <div className="profile">
