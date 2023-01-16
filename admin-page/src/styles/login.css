@@ -1,0 +1,14 @@
+.login-wrapper {
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.login-card {
+  margin-top: 7rem;
+  margin-left: 33rem;
+  height: 35rem;
+  width: 45rem;
+  background: var(--primary-color);
+  border-radius: 4%;
+}
