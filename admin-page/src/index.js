@@ -12,6 +12,7 @@ import {
 // Components and Providers
 import App from './App';
 import { UserSidebarContextProvider } from './context/userContext';
+import { ReportSidebarContextProvider } from './context/reportContext';
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000/',
@@ -23,7 +24,9 @@ root.render(
   <BrowserRouter>
     <ApolloProvider client={client}>
       <UserSidebarContextProvider>
-        <App />
+        <ReportSidebarContextProvider>
+          <App />
+        </ReportSidebarContextProvider>
       </UserSidebarContextProvider>
     </ApolloProvider>
   </BrowserRouter>

@@ -4,9 +4,9 @@ export const UserSidebarContext = createContext();
 
 
 export const UserSidebarContextProvider = (props) => {
-  const [selectedCondition, setSelectedCondition] = useState(null);
+  const [userCondition, setUserCondition] = useState(null);
   return (
-    <UserSidebarContext.Provider value={{selectedCondition, setSelectedCondition }}>
+    <UserSidebarContext.Provider value={{userCondition, setUserCondition }}>
       {props.children}
     </UserSidebarContext.Provider>
   );
