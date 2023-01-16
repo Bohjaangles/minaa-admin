@@ -3,6 +3,8 @@ import DataCard2 from '../components/dashboard/DataCard2.jsx'
 import DataCard3 from '../components/dashboard/DataCard3.jsx'
 import ReportChart from '../components/dashboard/ReportChart.jsx'
 import SecondChart from '../components/dashboard/SecondChart.js'
+import { ReportSidebarContext } from '../context/reportContext.js'
+import { useContext } from 'react'
 
 import React from 'react'
 
@@ -55,6 +57,30 @@ const reportsByUser = [
 // total users currently in db = 104
 
 const Dashboard = () => {
+  const { reportCondition } = useContext(ReportSidebarContext);
+  const reportConstants = ["CATEGORY", "STATUS", "CREATED_DATE", "RADIUS", "LOCATION"]
+  let data = []
+  if (reportCondition === reportConstants[0]) {
+    data = [
+      {name: 'unclear', value: 122},
+      {name: 'obscured', value: 56},
+      {name: 'multiple', value: 15},
+      {name: 'small', value: 28}
+    ]
+  }
+  if (reportCondition === reportConstants[1]) {
+    data
+  }
+  if (reportCondition === reportConstants[2]) {
+
+  }
+  if (reportCondition === reportConstants[3]) {
+
+  }
+  if (reportCondition === reportConstants[4]) {
+
+  }
+
   return (
     <div className="dashboard">
       <div className="dashboard__wrapper">
@@ -66,12 +92,12 @@ const Dashboard = () => {
         <div className="statics">
           <div className="stats">
             <h3 className="stats__title">Bar Chart</h3>
-            <ReportChart data={ReportCat}/>
+            <ReportChart data={data}/>
           </div>
 
           <div className="stats">
             <h3 className="stats__title">Area Chart</h3>
-            <SecondChart data={StatusCat} />
+            <SecondChart data={data} />
           </div>
         </div>
       </div>
