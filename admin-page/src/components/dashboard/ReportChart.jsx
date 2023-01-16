@@ -13,16 +13,6 @@ import {
 
 export default function ReportChart({data}) {
   
-  // const REPORT_RAD_CAT = gql`
-  // query Query {
-  //   reports {
-  //     reportCategory
-  //     radius
-  //   }
-  // }`
-  // let chartData = []
-  // const { loading, error, data } = useQuery(REPORT_RAD_CAT);
-
   return (
     <ResponsiveContainer width="100%" >
       <BarChart
