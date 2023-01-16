@@ -9,20 +9,19 @@ const SingleCard = (props) => {
   return (
     <Card className="single__card" sx={{ minWidth: 275 }  }>
       <CardContent>
-        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom align="center" >
-          New reports this past week: <span className="numberStyle">{weekTotalNumber}</span>
+        <Typography sx={{ fontSize: 15 }} color="text.secondary" gutterBottom >
+          New reports this past week: <span className="numberStyle1">{weekTotalNumber}</span>
         </Typography>
-        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 15 }} color="text.secondary" gutterBottom>
           New reports this past month: <span className="numberStyle">{monthTotalNumber}</span>
         </Typography>
-        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 15 }} color="text.secondary" gutterBottom>
           Reports verified this past week:
-          <span className="numberStyle">{weekTotalNumberVerified}</span>
+          <span className="numberStyle3">{weekTotalNumberVerified}</span>
         </Typography>
-        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 15 }} color="text.secondary" gutterBottom>
           Reports verified this past Month: 
-          <span className="numberStyle">{monthTotalNumberVerified}</span>
-          
+          <span className="numberStyle4">{monthTotalNumberVerified}</span>
         </Typography>
       </CardContent>
     </Card>
