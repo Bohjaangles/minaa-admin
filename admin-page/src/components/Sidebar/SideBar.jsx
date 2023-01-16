@@ -18,7 +18,7 @@ import { UserSidebarContext } from '../../context/userContext';
 export default function SideBar() {
 
   const { selectedCondition, setSelectedCondition } = useContext(UserSidebarContext);
-  const sidebarStates = []
+  const sidebarConstants = ["AGE_RANGE", "JOIN_DATE", "QUALIFICATION", "REPORTS_SUBMITTED"]
   return (
     <div className="sidebar">
       <div className="sidebar__top">
