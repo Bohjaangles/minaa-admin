@@ -46,7 +46,7 @@ const Dashboard = () => {
       setAreaChartTitle('Total Reports Submitted')
     }
     if (userCondition === null || userCondition === false) {
-      setAreaChartTitle('None Selected')
+      setAreaChartTitle('User Statistics')
       setUserData([])
     }
     console.log("User Condition: ", userCondition);
@@ -104,7 +104,7 @@ const Dashboard = () => {
     setBarChartTitle('count of reports by geographic area')
   }
     if (reportCondition === null || reportCondition === false) {
-      setBarChartTitle('None selected')
+      setBarChartTitle('Report Statistics')
       setReportData([])
     }
     console.log('reportCondition: ', reportCondition)
@@ -120,7 +120,7 @@ const Dashboard = () => {
         </div>
         <div className="statics">
           <div className="stats">
-            <h3 className="stats__title">Bar Chart: {barChartTitle}</h3>
+            <h3 className="stats__title">{barChartTitle}</h3>
             <ReportChart data={reportData}/>
           </div>
 
