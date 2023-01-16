@@ -153,6 +153,25 @@
 
 .numberStyle {
   color: var(--card-03-bg);
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
+  margin-left: 150px;
+}
+.numberStyle1 {
+  color: var(--card-03-bg);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 160px;
+}
+.numberStyle3 {
+  color: var(--card-03-bg);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 138px;
+}
+.numberStyle4 {
+  color: var(--card-03-bg);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 133px;
 }
