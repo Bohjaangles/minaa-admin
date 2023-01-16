@@ -52,7 +52,7 @@ const reportsByUser = [
   {name: '5', value: 2},
 ]
 
-// users = 104
+// total users currently in db = 104
 
 const Dashboard = () => {
   return (
