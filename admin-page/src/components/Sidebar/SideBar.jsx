@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 // import { NavLink } from 'react-router-dom';
 import './sidebar.css'
 import { Typography } from '@mui/material';
@@ -12,8 +12,13 @@ import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import AddchartRoundedIcon from '@mui/icons-material/AddchartRounded';
 import AssessmentRoundedIcon from '@mui/icons-material/AssessmentRounded';
 
+// Components
+import { UserSidebarContext } from '../../context/userContext';
 
 export default function SideBar() {
+
+  const { selectedCondition, setSelectedCondition } = useContext(UserSidebarContext);
+  const sidebarStates = []
   return (
     <div className="sidebar">
       <div className="sidebar__top">
@@ -30,7 +35,7 @@ export default function SideBar() {
           </ListItemIcon>USER DATA</ListSubheader>}
         >
           <ListItem>
-            <ListItemText id="switch-list-label-user-dob" primary="User DOB" />
+            <ListItemText id="switch-list-label-user-dob" primary="Age Range" />
             <Switch
               edge="end"
               // onChange={alert('user Lname')}
@@ -41,7 +46,7 @@ export default function SideBar() {
             />
           </ListItem>
           <ListItem>
-            <ListItemText id="switch-list-label-user-joined" primary="User join date" />
+            <ListItemText id="switch-list-label-user-joined" primary="Join Date" />
             <Switch
               edge="end"
               // onChange={alert('user Lname')}
@@ -52,7 +57,7 @@ export default function SideBar() {
             />
           </ListItem>
           <ListItem>
-            <ListItemText id="switch-list-label-user-quali" primary="User qualification" />
+            <ListItemText id="switch-list-label-user-quali" primary="Qualification" />
             <Switch
               edge="end"
               // onChange={alert('user Lname')}
@@ -63,7 +68,7 @@ export default function SideBar() {
             />
           </ListItem>
           <ListItem>
-            <ListItemText id="switch-list-label-user-reports" primary="User reports submitted" />
+            <ListItemText id="switch-list-label-user-reports" primary="Total Reports Submitted" />
             <Switch
               edge="end"
               // onChange={alert('user Lname')}
