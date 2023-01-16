@@ -30,28 +30,6 @@ export default function Sidebar() {
           </ListItemIcon>USER DATA</ListSubheader>}
         >
           <ListItem>
-            <ListItemText id="switch-list-label-user-Fname" primary="User first name" />
-            <Switch
-              edge="end"
-              // onChange={alert('user Fname')}
-              // checked={checked.indexOf('wifi') !== -1}
-              // inputProps={{
-              //   'aria-labelledby': 'switch-list-label-wifi',
-              // }}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText id="switch-list-label-user-Lname" primary="User last name" />
-            <Switch
-              edge="end"
-              // onChange={alert('user Lname')}
-              // checked={checked.indexOf('wifi') !== -1}
-              // inputProps={{
-              //   'aria-labelledby': 'switch-list-label-wifi',
-              // }}
-            />
-          </ListItem>
-          <ListItem>
             <ListItemText id="switch-list-label-user-dob" primary="User DOB" />
             <Switch
               edge="end"

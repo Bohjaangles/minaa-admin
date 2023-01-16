@@ -10,16 +10,16 @@ const SingleCard2 = (props) => {
     <Card className="single__card" sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          New reports this past week: {weekTotalNumber}
+          New users this past week: {weekTotalNumber}
         </Typography>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          New reports this past month: {monthTotalNumber}
+          New users this past month: {monthTotalNumber}
         </Typography>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          reports verified this past week: {weekTotalNumberVerified}
+          users promoted from BASE account: {weekTotalNumberVerified}
         </Typography>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          reports verified this past Month: {monthTotalNumberVerified}
+          Soomething else about users: {monthTotalNumberVerified}
         </Typography>
       </CardContent>
     </Card>

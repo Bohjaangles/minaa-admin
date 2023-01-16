@@ -1,5 +1,4 @@
 import React from "react";
-// import { useFetch } from "react-async";
 import { 
   ResponsiveContainer,
   BarChart,
@@ -10,43 +9,24 @@ import {
   CartesianGrid,
   Legend,
 } from "recharts";
+// import { useQuery, gql } from "@apollo/client";
 
-export default function ReportChart() {
-  // const repData = () => {
-  //   let chartData = {}
-  //   const [ data, error ] = useFetch(reportsData, {
-  // })
-  // let unclearReports = 0;
-  // let obscuredReports = 0;
-  // let multipleReports = 0;
-  // let largeReports = 0;
-  // let smallReports = 0;
-  // let allData = reportsData.array.forEach(element => {
-  //   if (element.reportCategory === "Unclear") {
-  //     unclearReports++;
-  //   } else if (element.reportCategory === "Obscured") {
-  //     obscuredReports++;
-  //   } else if (element.reportCategory === "Multiple") {
-  //     multipleReports++;
-  //   } else if (element.reportCategory === "Large") {
-  //     largeReports++;
-  //   } else if (element.reportCategory === "Small") {
-  //     smallReports++;
-  //   }
-  // });
-
-  const chartData = [
-    {name: "Unclear", value: 17},
-    {name: "Obscured", value: 35},
-    {name: "Multiple", value: 4},
-    {name: "Large", value: 7},
-    {name: "Small", value: 16}
-  ]
+export default function ReportChart({data}) {
   
+  // const REPORT_RAD_CAT = gql`
+  // query Query {
+  //   reports {
+  //     reportCategory
+  //     radius
+  //   }
+  // }`
+  // let chartData = []
+  // const { loading, error, data } = useQuery(REPORT_RAD_CAT);
+
   return (
     <ResponsiveContainer width="100%" >
       <BarChart
-        data={chartData}
+        data={data}
         margin={{
             top: 5,
             right: 30,
@@ -55,7 +35,7 @@ export default function ReportChart() {
           }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" stroke="#2884ff" />
+        <XAxis dataKey='name' stroke="#2884ff" />
         <YAxis stroke="#2884ff"/>
         <Legend />
         <Bar dataKey="value" stroke="#2884ff" fill="#2884ff" barSize={30} />

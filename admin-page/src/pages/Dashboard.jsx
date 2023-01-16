@@ -14,7 +14,45 @@ const card1 = {
   monthTotalNumberVerified: 35
 }
 
+const StatusCat = [
+  {name: 'reviewer', value: 15},
+  {name: 'uncertain', value: 28},
+  {name: 'neutralized', value: 28},
+  {name: 'dismissed', value: 41},
+  {name: 'reported', value: 109}
+]
 
+const ReportCat = [
+  {name: 'unclear', value: 122},
+  {name: 'obscured', value: 56},
+  {name: 'multiple', value: 15},
+  {name: 'small', value: 28}
+]
+
+const Radius = [
+  {name: '10', value: 63},
+  {name: '5', value: 78},
+  {name: '25', value: 41},
+  {name: '15', value: 13}
+]
+
+const userAge = [
+  {name: '18-25', value: 63},
+  {name: '26-35', value: 78},
+  {name: '36-45', value: 41},
+  {name: '46-55', value: 13},
+  {name: '56-65', value: 13},
+]
+
+const reportsByUser = [
+  {name: '1', value: 63},
+  {name: '2', value: 78},
+  {name: '3', value: 41},
+  {name: '4', value: 13},
+  {name: '5', value: 2},
+]
+
+// users = 104
 
 const Dashboard = () => {
   return (
@@ -28,12 +66,12 @@ const Dashboard = () => {
         <div className="statics">
           <div className="stats">
             <h3 className="stats__title">Data visualization 2</h3>
-            <ReportChart />
+            <ReportChart data={ReportCat}/>
           </div>
 
           <div className="stats">
             <h3 className="stats__title">Data visualization 1</h3>
-            <SecondChart />
+            <SecondChart data={StatusCat} />
           </div>
         </div>
       </div>
