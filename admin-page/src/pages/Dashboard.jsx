@@ -16,44 +16,6 @@ const card1 = {
   monthTotalNumberVerified: 35
 }
 
-const StatusCat = [
-  {name: 'reviewer', value: 15},
-  {name: 'uncertain', value: 28},
-  {name: 'neutralized', value: 28},
-  {name: 'dismissed', value: 41},
-  {name: 'reported', value: 109}
-]
-
-const ReportCat = [
-  {name: 'unclear', value: 122},
-  {name: 'obscured', value: 56},
-  {name: 'multiple', value: 15},
-  {name: 'small', value: 28}
-]
-
-const Radius = [
-  {name: '10', value: 63},
-  {name: '5', value: 78},
-  {name: '25', value: 41},
-  {name: '15', value: 13}
-]
-
-const userAge = [
-  {name: '18-25', value: 63},
-  {name: '26-35', value: 78},
-  {name: '36-45', value: 41},
-  {name: '46-55', value: 13},
-  {name: '56-65', value: 13},
-]
-
-const reportsByUser = [
-  {name: '1', value: 63},
-  {name: '2', value: 78},
-  {name: '3', value: 41},
-  {name: '4', value: 13},
-  {name: '5', value: 2},
-]
-
 // total users currently in db = 104
 
 const Dashboard = () => {
@@ -78,13 +40,30 @@ const Dashboard = () => {
     ]
   }
   if (reportCondition === reportConstants[2]) {
-
+    data = [
+      { name: 'this month', value: 11 },
+      { name: 'last month', value: 42 },
+      { name: '2 months ago', value: 74 },
+      { name: '3 months ago', value: 35 },
+      { name: '4 months ago', value: 23 },
+    ] 
   }
   if (reportCondition === reportConstants[3]) {
-
+    data = [
+      {name: '5', value: 78},
+      {name: '10', value: 63},
+      {name: '15', value: 13},
+      {name: '25', value: 41},
+    ]
   }
   if (reportCondition === reportConstants[4]) {
-
+    data = [
+      {name: 'East Van', value: 23},
+      {name: 'Gastown', value: 13},
+      {name: 'ChinaTown', value: 32},
+      {name: 'Richmond', value: 17},
+      {name: 'East Hastings', value: 54},
+    ]
   }
 
   return (
