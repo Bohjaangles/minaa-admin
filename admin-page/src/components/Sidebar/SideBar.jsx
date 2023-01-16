@@ -22,7 +22,7 @@ export default function SideBar() {
   return (
     <div className="sidebar">
       <div className="sidebar__top">
-        <Typography variant='h5' className='sidebar_title'><AddchartRoundedIcon className='sidebar_icon' />Minaa analytics</Typography>
+        <Typography variant='h5' className='sidebar_title'><AddchartRoundedIcon className='sidebar_icon' />Analytics</Typography>
       </div>
       <div className="sidebar__content">
         <List
