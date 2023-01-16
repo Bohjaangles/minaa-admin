@@ -1,8 +1,7 @@
 import React from 'react'
 import Router from '../Routes/Router'
 import SideBar from '../Sidebar/SideBar'
-import TopNav from '../TopNav/TopNav'
-
+import TopNav from '../TopNav/TopNav' 
 
 export default function Layout() {
   return (
