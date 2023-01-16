@@ -7,7 +7,7 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
- } from 'recharts'
+} from 'recharts'
 
 export default function SecondChart(data) {
 
@@ -24,30 +24,41 @@ export default function SecondChart(data) {
           bottom: 29,
         }}
       >
-        <defs>
-          <linearGradient id={data.value1} x1="0" y1="0" x2="0" y2="1">
+        {/* <defs>
+          <linearGradient id="colorvalue1" x1="0" y1="0" x2="0" y2="1">
             <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
             <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
           </linearGradient>
-          <linearGradient id={data.value2} x1="0" y1="0" x2="0" y2="1">
+          <linearGradient id="colorvalue2" x1="0" y1="0" x2="0" y2="1">
             <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
             <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
           </linearGradient>
-        </defs>
-        <XAxis dataKey={data.name} />
+          <linearGradient id="colorvalue3" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
+          </linearGradient>
+        </defs> */}
+        <XAxis dataKey="name" />
         <YAxis />
         <CartesianGrid strokeDasharray="3 3" />
         <Tooltip />
         <Area
           type="monotone"
-          dataKey={data.value1}
+          dataKey="value1"
           stroke="#8884d8"
           fillOpacity={1}
           fill="#b0c5d3"
         />
         <Area
           type="monotone"
-          dataKey={data.value2}
+          dataKey="value2"
+          stroke="#82ca9d"
+          fillOpacity={1}
+          fill="#C6D4B0"
+        />
+        <Area
+          type="monotone"
+          dataKey="value3"
           stroke="#82ca9d"
           fillOpacity={1}
           fill="#C6D4B0"
