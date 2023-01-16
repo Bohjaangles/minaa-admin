@@ -16,7 +16,7 @@ import AssessmentRoundedIcon from '@mui/icons-material/AssessmentRounded';
 import { UserSidebarContext } from '../../context/userContext';
 
 export default function SideBar() {
-
+  const { isToggled, setIsToggled } = useContext(UserSidebarContext);
   const { selectedCondition, setSelectedCondition } = useContext(UserSidebarContext);
   const sidebarStates = []
   return (

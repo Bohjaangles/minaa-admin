@@ -4,9 +4,9 @@ export const ReportSidebarContext = createContext();
 
 
 export const ReportSidebarContextProvider = (props) => {
-  const [setToggled, setSetToggled] = useState(null);
+  const [isToggled, setIsToggled] = useState(null);
   return (
-    <ReportSidebarContext.Provider value={{selectedCondition, setSelectedCondition }}>
+    <ReportSidebarContext.Provider value={{isToggled, setIsToggled }}>
       {props.children}
     </ReportSidebarContext.Provider>
   );
