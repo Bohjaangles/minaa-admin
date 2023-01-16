@@ -2,13 +2,13 @@ import DataCard1 from '../components/dashboard/DataCard1.jsx'
 import DataCard2 from '../components/dashboard/DataCard2.jsx'
 import DataCard3 from '../components/dashboard/DataCard3.jsx'
 import ReportChart from '../components/dashboard/ReportChart.jsx'
-import SecondChart from '../components/dashboard/SecondChart.js'
+import SecondChart from '../components/dashboard/SecondChart.jsx'
 import { ReportSidebarContext } from '../context/reportContext.js'
+import { UserSidebarContext } from '../context/userContext.js'
 import { useContext, useState, useEffect } from 'react'
 
 import React from 'react'
-
-
+import { newUserData, reportsByQualificationData, reportsPerUserData, totalReportsData } from '../helpers/getUserChartData.js'
 const card1 = {
   weekTotalNumber: 27,
   monthTotalNumber: 112,
@@ -19,10 +19,40 @@ const card1 = {
 // total users currently in db = 104
 
 const Dashboard = () => {
-  const [barChartTitle, setBarChartTitle] = useState('None Selected')
+  const [barChartTitle, setBarChartTitle] = useState('None Selected');
+  const [areaChartTitle, setAreaChartTitle] = useState('None Selected');
   const { reportCondition } = useContext(ReportSidebarContext);
-  const [reportData, setReportData] = useState([])
-  const reportConstants = ["CATEGORY", "STATUS", "CREATED_DATE", "RADIUS", "LOCATION"]
+  const {userCondition } = useContext(UserSidebarContext);
+  const [reportData, setReportData] = useState([]);
+  const [userData, setUserData] = useState([]);
+  const reportConstants = ["CATEGORY", "STATUS", "CREATED_DATE", "RADIUS", "LOCATION"];
+  const userConstants = ["NEW_USERS", "BY_USER", "BY_QUALIFICATION", "REPORTS_SUBMITTED"];
+
+  useEffect(() => {
+    if (userCondition === userConstants[0]) {
+      setUserData(newUserData);
+      setAreaChartTitle('New Users')
+    }
+    if (userCondition === userConstants[1]) {
+      setUserData(reportsPerUserData);
+      setAreaChartTitle('Reports Submitted Per User')
+    }
+    if (userCondition === userConstants[2]) {
+      setUserData(reportsByQualificationData);
+      setAreaChartTitle('Reports Submitted By Qualification')
+    }
+    if (userCondition === userConstants[3]) {
+      setUserData(totalReportsData)
+      setAreaChartTitle('Total Reports Submitted')
+    }
+    if (userCondition === null || userCondition === false) {
+      setAreaChartTitle('User Statistics')
+      setUserData([])
+    }
+    console.log("User Condition: ", userCondition);
+    console.log("userChartData: ", userData);
+
+  }, [userCondition])
 
   useEffect(() => {
     if (reportCondition === reportConstants[0]) {
@@ -74,7 +104,7 @@ const Dashboard = () => {
     setBarChartTitle('count of reports by geographic area')
   }
     if (reportCondition === null || reportCondition === false) {
-      setBarChartTitle('None selected')
+      setBarChartTitle('Report Statistics')
       setReportData([])
     }
     console.log('reportCondition: ', reportCondition)
@@ -90,13 +120,13 @@ const Dashboard = () => {
         </div>
         <div className="statics">
           <div className="stats">
-            <h3 className="stats__title">Bar Chart: {barChartTitle}</h3>
+            <h3 className="stats__title">{barChartTitle}</h3>
             <ReportChart data={reportData}/>
           </div>
 
           <div className="stats">
-            <h3 className="stats__title">Area Chart</h3>
-            <SecondChart data={reportData} />
+            <h3 className="stats__title">{areaChartTitle}</h3>
+            <SecondChart data={userData} />
           </div>
         </div>
       </div>

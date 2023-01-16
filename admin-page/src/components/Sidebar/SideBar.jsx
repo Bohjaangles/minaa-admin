@@ -20,7 +20,7 @@ export default function SideBar() {
 
   const { userCondition, setUserCondition } = useContext(UserSidebarContext);
   const { reportCondition, setReportCondition } = useContext(ReportSidebarContext);
-  const userConstants = ["AGE_RANGE", "JOIN_DATE", "QUALIFICATION", "REPORTS_SUBMITTED"]
+  const userConstants = ["NEW_USERS", "BY_USER", "BY_QUALIFICATION", "REPORTS_SUBMITTED"];
   const reportConstants = ["CATEGORY", "STATUS", "CREATED_DATE", "RADIUS", "LOCATION"]
 
   return (
