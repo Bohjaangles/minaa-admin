@@ -15,10 +15,6 @@
   line-height: 70px;
 }
 
-element.style {
-  border-radius: 50%
-}
-
 .sidebar__top {
   display: flex;
   flex-direction: row;
@@ -26,7 +22,8 @@ element.style {
   align-items: center;
   column-gap: 0.5rem;
   color: var(--heading-color);
-  margin-bottom: 1em;
+  margin-top: 0.9em;
+  margin-bottom: 3em;
 }
 .sidebar__top h2 span {
   width: 30px;
@@ -57,19 +54,6 @@ element.style {
   justify-content: center;
   border-radius: 15%;
 }
-.list_header-1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15%;
-}
-element.style{
-  display: flex;
-  align-items: center;
-  border-radius: 50%;
-}
-
 .list_header-2 {
   display: flex;
   flex-direction: row;
@@ -77,6 +61,18 @@ element.style{
   border-radius: 15%;
 }
 
+.list_header-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3%;
+  width: 100%;
+}
+element.style{
+  display: flex;
+  align-items: center;
+}
 
 .sidebar_content {
   display: flex;
@@ -88,43 +84,134 @@ element.style{
   margin-top: 5px;
 }
 
-.menu {
-  height: 80%;
-}
 
-.sidebar__bottom {
-  height: 20%;
-}
 
-.nav__link,
-.sidebar__bottom span {
-  display: flex;
-  align-items: center;
-  column-gap: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-.sidebar__bottom span {
-  color: var(--small-text-color);
-  cursor: pointer;
-}
 
-.nav__list {
-  display: flex;
 
-  row-gap: 2rem;
-  flex-direction: column;
-  color: var(--small-text-color);
-}
 
-.nav__link i {
-  color: var(--secondary-color);
-}
 
-.nav__active {
-  color: white;
-  background: #b7ffe913;
-  padding: 6px;
-  border-radius: 5px;
-}
+
+
+
+
+
+/*
+export const lightColor =
+{
+  bluePrimary: {
+    100: "#eff3f6",
+    200: "#dfe8ed",
+    300: "#d0dce5",
+    400: "#c0d1dc",
+    500: "#b0c5d3",
+    600: "#8d9ea9",
+    700: "#6a767f",
+    800: "#464f54",
+    900: "#23272a"
+  },
+  darkBlue: {
+    100: "#d2d7dc",
+    200: "#a4b0b9",
+    300: "#778895",
+    400: "#496172",
+    500: "#1c394f",
+    600: "#162e3f",
+    700: "#11222f",
+    800: "#0b1720",
+    900: "#060b10"
+  },
+  blackOff: {
+    100: "#d2d2d3",
+    200: "#a4a6a8",
+    300: "#77797c",
+    400: "#494d51",
+    500: "#1c2025",
+    600: "#161a1e",
+    700: "#111316",
+    800: "#0b0d0f",
+    900: "#060607"
+  },
+  grayAccent: {
+    100: "#f1f3f2",
+    200: "#e3e7e5",
+    300: "#d4dbd7",
+    400: "#c6cfca",
+    500: "#b8c3bd",
+    600: "#939c97",
+    700: "#6e7571",
+    800: "#4a4e4c",
+    900: "#252726"
+  },
+  redAccent: {
+    100: "#fbdfdd",
+    200: "#f6bfbb",
+    300: "#f29e99",
+    400: "#ed7e77",
+    500: "#e95e55",
+    600: "#ba4b44",
+    700: "#8c3833",
+    800: "#5d2622",
+    900: "#2f1311"
+  },
+  altGreen: {
+    "50": "#dde49c",
+    "100": "#ced681",
+    "200": "#bdc66a",
+    "300": "#aab454",
+    "400": "#949d45",
+    "500": "#7f8643",
+    "600": "#6c7141",
+    "700": "#5a5d3d",
+    "800": "#494b37",
+    "900": "#393a31"
+  },
+  lightseagreen: {
+    "50": "#7af6f0",
+    "100": "#5aefe7",
+    "200": "#3ce4dc",
+    "300": "#25d4cb",
+    "400": "#20b2aa",
+    "500": "#219892",
+    "600": "#22807b",
+    "700": "#216966",
+    "800": "#1f5451",
+    "900": "#1b403e"
+  },
+  lapizLazuli: {
+    "50": "#84aee2",
+    "100": "#699ad5",
+    "200": "#5185c5",
+    "300": "#4372ac",
+    "400": "#386090",
+    "500": "#365479",
+    "600": "#344964",
+    "700": "#2f3e51",
+    "800": "#2a333f",
+    "900": "#23282e"
+  },
+  sheenGold: {
+    "50": "#f2ddac",
+    "100": "#e9cd8e",
+    "200": "#ddbd72",
+    "300": "#cfab58",
+    "400": "#c49a39",
+    "500": "#ac8a3b",
+    "600": "#957a3b",
+    "700": "#7e6a3a",
+    "800": "#695a37",
+    "900": "#564c33"
+  },
+  otherGold: {
+    "50": "#ffdc9f",
+    "100": "#ffcd77",
+    "200": "#ffbf50",
+    "300": "#ffb028",
+    "400": "#ffa300",
+    "500": "#e19107",
+    "600": "#c3800c",
+    "700": "#a87011",
+    "800": "#8e6113",
+    "900": "#755115"
+  }
+*/

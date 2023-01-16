@@ -13,7 +13,7 @@ import AddchartRoundedIcon from '@mui/icons-material/AddchartRounded';
 import AssessmentRoundedIcon from '@mui/icons-material/AssessmentRounded';
 
 
-export default function Sidebar() {
+export default function SideBar() {
   return (
     <div className="sidebar">
       <div className="sidebar__top">
@@ -22,10 +22,10 @@ export default function Sidebar() {
       <div className="sidebar__content">
         <List
           className='sidebar__list-1'
-          component="Sidebar"
+          component="SideBar"
           dense={true}
-          sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
-          subheader={<ListSubheader className='list_header-1'><ListItemIcon fontSize='large'>
+          sx={{ width: '100%', maxWidth: 360, bgcolor: 'linear-gradient(#f2ddac, #957a3b)' }}
+          subheader={<ListSubheader className='list_header-1' sx={{bgcolor: '#D9E4F5' }}><ListItemIcon fontSize='large'>
             <AccountCircleRoundedIcon />
           </ListItemIcon>USER DATA</ListSubheader>}
         >
@@ -76,10 +76,10 @@ export default function Sidebar() {
         </List>
         <List
           className='sidebar__list-2'
-          component="Sidebar"
+          component="SideBar"
           dense={true}
-          sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
-          subheader={<ListSubheader className='list_header-1'><ListItemIcon fontSize='large'>
+          sx={{ width: '100%', maxWidth: 360, bgcolor: 'linear-gradient(#f2ddac, #957a3b)' }}
+          subheader={<ListSubheader className='list_header-1' sx={{bgcolor: '#D9E4F5' }}><ListItemIcon fontSize='large'>
             <AssessmentRoundedIcon />
           </ListItemIcon>REPORT DATA</ListSubheader>}
         >

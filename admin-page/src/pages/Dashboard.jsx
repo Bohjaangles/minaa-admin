@@ -65,12 +65,12 @@ const Dashboard = () => {
         </div>
         <div className="statics">
           <div className="stats">
-            <h3 className="stats__title">Data visualization 2</h3>
+            <h3 className="stats__title">Bar Chart</h3>
             <ReportChart data={ReportCat}/>
           </div>
 
           <div className="stats">
-            <h3 className="stats__title">Data visualization 1</h3>
+            <h3 className="stats__title">Area Chart</h3>
             <SecondChart data={StatusCat} />
           </div>
         </div>
