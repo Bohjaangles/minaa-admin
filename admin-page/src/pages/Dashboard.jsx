@@ -4,7 +4,7 @@ import DataCard3 from '../components/dashboard/DataCard3.jsx'
 import ReportChart from '../components/dashboard/ReportChart.jsx'
 import SecondChart from '../components/dashboard/SecondChart.js'
 import { ReportSidebarContext } from '../context/reportContext.js'
-import { useContext } from 'react'
+import { useContext, useState, useEffect } from 'react'
 
 import React from 'react'
 
@@ -19,52 +19,66 @@ const card1 = {
 // total users currently in db = 104
 
 const Dashboard = () => {
+  const [barChartTitle, setBarChartTitle] = useState('None Selected')
   const { reportCondition } = useContext(ReportSidebarContext);
+  const [reportData, setReportData] = useState([])
   const reportConstants = ["CATEGORY", "STATUS", "CREATED_DATE", "RADIUS", "LOCATION"]
-  let data = []
-  if (reportCondition === reportConstants[0]) {
-    data = [
+
+  useEffect(() => {
+    if (reportCondition === reportConstants[0]) {
+    setReportData([
       {name: 'unclear', value: 122},
       {name: 'obscured', value: 56},
       {name: 'multiple', value: 15},
       {name: 'small', value: 28}
-    ]
+    ])
+    setBarChartTitle('count of reports by category type')
   }
   if (reportCondition === reportConstants[1]) {
-    data = [
+    setReportData([
       {name: 'reviewer', value: 15},
       {name: 'uncertain', value: 28},
       {name: 'neutralized', value: 28},
       {name: 'dismissed', value: 41},
       {name: 'reported', value: 109}
-    ]
+    ])
+    setBarChartTitle('count of reports by current report status')
   }
   if (reportCondition === reportConstants[2]) {
-    data = [
+    setReportData([
       { name: 'this month', value: 11 },
       { name: 'last month', value: 42 },
       { name: '2 months ago', value: 74 },
       { name: '3 months ago', value: 35 },
       { name: '4 months ago', value: 23 },
-    ] 
+    ]) 
+    setBarChartTitle('count of reports by when they were created')
   }
   if (reportCondition === reportConstants[3]) {
-    data = [
+    setReportData([
       {name: '5', value: 78},
       {name: '10', value: 63},
       {name: '15', value: 13},
       {name: '25', value: 41},
-    ]
+    ])
+    setBarChartTitle('count of reports by radius of affected area in meters')
   }
   if (reportCondition === reportConstants[4]) {
-    data = [
+    setReportData([
       {name: 'East Van', value: 23},
       {name: 'Gastown', value: 13},
       {name: 'ChinaTown', value: 32},
       {name: 'Richmond', value: 17},
       {name: 'East Hastings', value: 54},
-    ]
+    ])
+    setBarChartTitle('count of reports by geographic area')
   }
+    if (reportCondition === null || reportCondition === false) {
+      setBarChartTitle('None selected')
+      setReportData([])
+    }
+    console.log('reportCondition: ', reportCondition)
+  }, [reportCondition])
 
   return (
     <div className="dashboard">
@@ -76,13 +90,13 @@ const Dashboard = () => {
         </div>
         <div className="statics">
           <div className="stats">
-            <h3 className="stats__title">Bar Chart</h3>
-            <ReportChart data={data}/>
+            <h3 className="stats__title">Bar Chart: {barChartTitle}</h3>
+            <ReportChart data={reportData}/>
           </div>
 
           <div className="stats">
             <h3 className="stats__title">Area Chart</h3>
-            <SecondChart data={data} />
+            <SecondChart data={reportData} />
           </div>
         </div>
       </div>
