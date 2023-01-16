@@ -69,7 +69,13 @@ const Dashboard = () => {
     ]
   }
   if (reportCondition === reportConstants[1]) {
-    data
+    data = [
+      {name: 'reviewer', value: 15},
+      {name: 'uncertain', value: 28},
+      {name: 'neutralized', value: 28},
+      {name: 'dismissed', value: 41},
+      {name: 'reported', value: 109}
+    ]
   }
   if (reportCondition === reportConstants[2]) {
 
