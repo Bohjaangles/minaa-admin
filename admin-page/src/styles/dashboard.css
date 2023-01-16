@@ -150,3 +150,9 @@
   align-items: center;
   column-gap: 1rem;
 }
+
+.numberStyle {
+  color: var(--card-03-bg);
+  font-size: 3rem;
+  font-weight: 500;
+}
