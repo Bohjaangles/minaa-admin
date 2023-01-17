@@ -2,14 +2,15 @@
 <!-- No screenshare, just our cameras on -->
 <!-- Hi, my name is ** and I'm a developer with a background in ** -->
 <!-- Hi, my name is ** and I'm a developer with a background in ** -->
-<!-- Hi, my name is ** and I'm a developer with a background in ** -->
-As developers we want to use technologies to solve problems. Jae used to be a landmine technician and this provided inspiration to address a prescient problem in our world today: 
+Hi, my name is Jae and I'm a full stack developer with a background in psychology and the military.
 
-Landmines and unexploded ordinance has been and continues to be a big issue for everyday people all over the world and given the current global situation we thought this a perfect opportunity to apply what we've learned to this problem.
+As developers we want to use technologies to solve problems. I used to be a landmine technician in the army and this provided inspiration to address a prescient problem in our world today: 
+
+Landmines and unexploded ordinance has been and continues to be a big issue for everyday people all over the world and given the current global situation we thought this a perfect opportunity to apply what we've learned in this bootcamp to this problem.
 
 # Intro
 <!-- Screenshare -->
-Good afternoon everyone! We are excited to introduce our mobile app, Minaa.
+Thank you for being here. We are excited to introduce our mobile app, Minaa.
 
 We wanted to demonstrate our ability to learn and use different tech stacks, and utilise these technologies to make a practical difference to everyday people. This was a risk, and we are confident it has paid off!
 
@@ -18,7 +19,7 @@ And so, we present to you our mobile app and its supporting browser admin page. 
 Supporting this, the admin page provides Minaa administrators with meta data about reports and users along with helpful visualizations. 
 
 <!-- Powerpoint with Techstack Display -->
-In our tech stack, we used React-native, React, and react-native-paper and Material UI libraries on our front-end, and GraphQL with Apollo and the Prisma ORM to interact with our PostgreSQL database.
+In our front end, we used Paper and Material UI on top of React-native and React, and in our backend we used GraphQL with Apollo Server and the Prisma ORM to interact with our PostgreSQL database.
 
 # Walkthrough
 ## walkthrough part 1
@@ -37,6 +38,10 @@ The Report Detail Screen displays things like the status of the report, the date
 Back to the map, let's try and make our own report. 
 
 ## walkthrough part 2
+
+//  Sylvia.Tremblay40@hotmail.com
+//  CFPvtRPId
+//  CFPvtRPIdwDYKv7
 
 First, we need you to login to the app so that you can access the full set of features.
 
@@ -91,9 +96,9 @@ Though GraphQL was a large initial investment, our tech-stack empowered us to cr
 <!-- Slide for conclusion -->
 This brings us to the conclusion of our demo.
 
-When we began this project, we sought to create a cross-platform application from scratch using React-Native and GraphQL. Though we had to learn these technologies from the ground up, we were able to leverage them in a meaningful way.
+When we began this project, we sought to create a cross-platform application from scratch using technologies like React-Native and GraphQL. Though we had to learn these technologies from the ground up, we were able to leverage them in a meaningful way.
 
-We experienced many challenges along the way, managing tech debt and ensuring that the app embodied our core features. Despite these challenges, we are proud of the what our app offers. 
+We experienced many challenges such as managing tech debt and ensuring that the app embodied our core features. Despite these challenges, we are proud of the what our app offers. 
 
 <!-- Screen shot of admin and mobile pages -->
 As we neared the end of our development timeframe, we wanted to make our app even more robust and feature-rich. This includes linking user actions and privileges to admin approval, offline map capabilities, user comments on reports, and fully utilizing mobile native features such as the camera and haptic responses. 
