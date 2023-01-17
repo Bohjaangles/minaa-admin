@@ -3,13 +3,13 @@
 
 ## checklist
 [] - mina mobile app up - user logged out
-[] - mina server /apoloo playground up
+[] - mina server /apollo playground up
 [] - slide show up and set to begining
 [] - mina-admin up and at the login page
 
  - BEN. - Hi my name is Ben, I am a web developer with a background of Graphic design and Engineering.
 
- - RUSSEL - hi, my name is Russel,   I am a web developer with a background in private business
+ - RUSSEL - hi, my name is Russel, I am a web developer with a background in private business
 
  - JAE - Hi, my name is Jae and I'm a full stack developer with a background in psychology and the military.
 
