@@ -20,7 +20,7 @@ const Login = () => {
           <Avatar sx={{ width: 55, height: 55, top: 4, left: 300 }} alt="Minaa" src={minaa} />
           <CardHeader title="Minaa Admin Page Login" sx={{ ml: 23 }}/>
           <TextField id="standard-basic" label="Username" variant="outlined" sx={{ width: 300, ml: 23, mt: 5 }}/>
-          <TextField id="standard-basic" label="Password" variant="outlined" sx={{ width: 300, ml: 23, mt: 5 }}/>
+          <TextField id="standard-basic" type='password' label="Password" variant="outlined" sx={{ width: 300, ml: 23, mt: 5 }}/>
           <Link to="/dashboard">
             <Button variant="contained" sx={{ ml: 36, mt: 5 }}>Submit</Button>
           </Link>
