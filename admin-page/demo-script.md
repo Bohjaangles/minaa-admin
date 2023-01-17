@@ -2,7 +2,9 @@
 <!-- No screenshare, just our cameras on -->
 <!-- Hi, my name is ** and I'm a developer with a background in ** -->
 <!-- Hi, my name is ** and I'm a developer with a background in ** -->
-Hi, my name is Jae and I'm a full stack developer with a background in psychology and the military.
+ - RUSSEL - hi, my name is Russel,   I am a web developer with a background in private business
+
+ - JAE - Hi, my name is Jae and I'm a full stack developer with a background in psychology and the military.
 
 As developers we want to use technologies to solve problems. I used to be a landmine technician in the army and this provided inspiration to address a prescient problem in our world today: 
 
@@ -25,7 +27,7 @@ In our front end, we used Paper and Material UI on top of React-native and React
 ## walkthrough part 1
 
 <!-- Open up app screen share -->
-Let's now take a walkthrough of the features of this app.
+ - BEN - Let's now take a walkthrough of the features of this app.
 
 When we open the app to the Map Page. Here, you can quickly zoom in and out to see what's happening in your area. 
 
@@ -65,7 +67,7 @@ Finally, on the settings page you can toggle options for the app, like dark mode
 
 ## Walkthrough part 5
 
-Landmines are dangerous and upredictable by nature, and so we have created a resources page to give our users quick and easy access to key resources about these kinds of situations and best practices.
+ - RUSSEL - Landmines are dangerous and upredictable by nature, and so we have created a resources page to give our users quick and easy access to key resources about these kinds of situations and best practices.
 
 Let's take a look. First, we'll open up the resources page. Today, this page only contains general information about landmines for demonstration purposes. In deployment, these can be curated by our administrators to provide even more up to date and detailed safety information for our users.
 
@@ -79,7 +81,7 @@ As an administrator, you will be able to login and have access to a wide variety
 ## Walkthorugh part 7 - backend
 
 <!-- Apollo Playground -->
-Next we will talk about our backend and the powerful tech stack behind it. We're leveraging the strengths of GraphQL to provide a reliable, high-performance backend for our mobile application. 
+ - JAE - Next we will talk about our backend and the powerful tech stack behind it. We're leveraging the strengths of GraphQL to provide a reliable, high-performance backend for our mobile application. 
 
 GraphQL is a query language that allows us to define a data schema and access it from our mobile app. We implement this through Apollo Server, and with Apollo Playground, we can quickly execute our GraphQL queries and view the results. 
 
@@ -90,7 +92,7 @@ Though GraphQL was a large initial investment, our tech-stack empowered us to cr
 
 ## Wrap up
 <!-- Slide for conclusion -->
-This brings us to the conclusion of our demo.
+ - RUSSEL - This brings us to the conclusion of our demo.
 
 When we began this project, we sought to create a cross-platform application from scratch using technologies like React-Native and GraphQL. Though we had to learn these technologies from the ground up, we were able to leverage them in a meaningful way.
 
