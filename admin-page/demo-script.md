@@ -2,6 +2,8 @@
 <!-- No screenshare, just our cameras on -->
 <!-- Hi, my name is ** and I'm a developer with a background in ** -->
 <!-- Hi, my name is ** and I'm a developer with a background in ** -->
+ - BEN. - Hi my name is Ben, I am a web developer with a background of Graphic design and Engineering.
+
  - RUSSEL - hi, my name is Russel,   I am a web developer with a background in private business
 
  - JAE - Hi, my name is Jae and I'm a full stack developer with a background in psychology and the military.
