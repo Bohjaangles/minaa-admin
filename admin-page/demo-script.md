@@ -43,19 +43,15 @@ Back to the map, let's try and make our own report.
 //  CFPvtRPId
 //  CFPvtRPIdwDYKv7
 
-First, we need you to login to the app so that you can access the full set of features.
+Oops, you need to login to the app so that you can access the full set of features.
 
-Here, you can take a look at the register page, but you'll need to go back to the login page to actually log in. 
-
-On the login page, if you enter incorrect credentials, you'll see that the app won't let you through. So, make sure to enter the correct credentials. 
+Let's take a look at the register page, but you'll need to go back to the login page to actually log in. 
 
 Once logged in you'll be taken to the main page again.
 
 ## Walkthrough part 3
 
 To make a new report, simply long press on the map. From there, you'll be prompted to fill out the details of your report. 
-
-This includes providing a unique picture for your report, as well as any other information that may be relevant. 
 
 We've made sure that the process of entering the details is as straightforward as possible, so you can quickly and easily make a report anytime, anywhere.
 
