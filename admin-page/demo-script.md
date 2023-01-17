@@ -1,7 +1,12 @@
 # Personal Intros
 <!-- No screenshare, just our cameras on -->
-<!-- Hi, my name is ** and I'm a developer with a background in ** -->
-<!-- Hi, my name is ** and I'm a developer with a background in ** -->
+
+## checklist
+[] - mina mobile app up - user logged out
+[] - mina server /apoloo playground up
+[] - slide show up and set to begining
+[] - mina-admin up and at the login page
+
  - BEN. - Hi my name is Ben, I am a web developer with a background of Graphic design and Engineering.
 
  - RUSSEL - hi, my name is Russel,   I am a web developer with a background in private business
