@@ -44,7 +44,7 @@ Let's click on one of the pins. This will bring up a callout which shows basic i
 
 The Report Detail Screen displays things like the status of the report, the date it was reported, and more.
 
-Back to the map, let's try and make our own report. 
+Back to the map, let's try and make our own report. [PAUSE]
 
 ## walkthrough part 2
 
@@ -56,7 +56,7 @@ Oops, you need to login to the app so that you can access the full set of featur
 
 Let's take a look at the register page, but you'll need to go back to the login page to actually log in. 
 
-Once logged in you'll be taken to the main page again.
+Once logged in you'll be taken to the main page again.[PAUSE]
 
 ## Walkthrough part 3
 
@@ -66,7 +66,7 @@ We've made sure that the process of entering the details is as straightforward a
 
 ## Walkthrough part 4
 
-Next let's take a look at the profile page. We see all of our user's reports at the top of the  page in an easy-to-navigate carousel. 
+Next let's take a look at the profile page.[PAUSE] We see all of our user's reports at the top of the  page in an easy-to-navigate carousel. 
 
 Clicking on "Saved" will bring up a Bottom Sheet where you can view all the important reports you've saved. 
 
