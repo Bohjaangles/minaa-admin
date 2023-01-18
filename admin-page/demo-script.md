@@ -2,7 +2,7 @@
 <!-- No screenshare, just our cameras on -->
 
 ## checklist
-[] - mina mobile app up - user logged out
+[] - mina mobile app up - user logged out -light mode engaged
 [] - mina server /apollo playground up
 [] - slide show up and set to begining
 [] - mina-admin up and at the login page
