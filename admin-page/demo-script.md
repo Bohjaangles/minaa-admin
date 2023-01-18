@@ -88,9 +88,9 @@ As an administrator, you will be able to login and have access to a wide variety
 ## Walkthorugh part 7 - backend
 
 <!-- Apollo Playground -->
- - JAE - Next we will talk about our backend and the powerful tech stack behind it. We're leveraging the strengths of GraphQL to provide a reliable, high-performance backend for our mobile application. 
+ - JAE - Next we will talk about our backend and the powerful tech stack behind it. We're leveraging the strengths of GraphQL to provide an efficient, high-performance backend for our mobile application. 
 
-GraphQL is a query language that allows us to define a data schema and access it from our mobile app. We implement this through Apollo Server, and with Apollo Playground, we can quickly execute our GraphQL queries and view the results. 
+GraphQL is a query language that allows us to define a data schema and make targeted queries for information. We implement this through Apollo Server, and with Apollo Playground, we can quickly execute our GraphQL queries and view the results. 
 
 <!-- Slide for Prisma (schema) -->
 Our GraphQL API employs Prisma to communicate with our PostgreSQL database. Prisma allowed us to quickly iterate and evolve our database and GraphQL resolvers throughout the development process. 
